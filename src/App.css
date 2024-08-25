@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s ease-in-out;
+  }
+}
+
+.App-header {
+  background-image: linear-gradient(red, rgb(0, 0, 0));
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.myName{
+  font-family: "Tapestry", serif;
+  font-size: 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+/* This took a while to balance*/
+.social-icons a {
+  display: flex; /* Make the <a> tags behave like flex containers */
+  align-items: center; /* Center the images vertically within the <a> tags */
+  justify-content: center; /* Center the images horizontally within the <a> tags */
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden; /* Ensure the images do not overflow the <a> tags */
+}
+
+.social-icons img {
+  width: 100%; /* Make the images fill the <a> tags */
+  height: auto;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+  
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+}
+
+*{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.pad {
+  padding: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.pad h2 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.lineH {
+  line-height: 1.6;
+}
+
+.noStyle {
+  list-style-type: none;
+  padding: 0;
+}
+
+.noStyle li {
+  margin-bottom: 10px;
+}
+
+.pad div {
+  margin-bottom: 20px;
+}
+
+.pad button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pad button:hover {
+  background-color: #444;
+}

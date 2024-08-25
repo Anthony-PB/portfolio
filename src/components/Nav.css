@@ -1,0 +1,47 @@
+.nav-div{
+    border: black 4px solid;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.nav-ul{
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: red; /* Set link color */
+    padding: 10px; /* Add padding to links */
+    position: relative; /* For pseudo-element positioning */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: darkred; /* Change color on hover */
+  }
+  
+  nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

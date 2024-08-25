@@ -1,0 +1,299 @@
+/*
+Home Stuff
+*/
+.spread{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.eighty-twenty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height:100%;
+  width: 100%;
+}
+.eighty{
+  width: 80%;
+  height: 100%;
+  border: #000000 solid 5px;
+}
+.twenty{
+  width: 20%;
+  height:100%;
+  border: #000000 solid 5px;
+}
+/*
+Project Stuff
+*/
+.moreInfo:hover {
+  cursor: pointer;
+}
+
+img{
+  max-width: 450px;
+  padding:25px;
+}
+
+.student {
+  border: 1px solid rgb(0, 0, 0);
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.projects {
+  align-items: center;
+  line-height: 1.5;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  vertical-align: middle;
+  width: 100%; /* Ensure the projects container takes full width */
+}
+
+.normalLink {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.downloadLink{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.downloadLink:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.normalLink:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.05);
+}
+
+
+.hide {
+  font-size: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: none;
+}
+
+.show {
+  font-size: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.wrapper-14 {
+  position: relative;
+  display: inline-block;
+}
+
+.wrapper-14:before,
+.wrapper-14:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  transform: scaleY(0);
+  transition: transform 0.3s;
+  z-index: 5;
+}
+
+.wrapper-14:before {
+  top: 0;
+  left: 0;
+}
+
+.wrapper-14:after {
+  top: 0;
+  right: 0;
+}
+
+.wrapper-14 .hover-14:before,
+.wrapper-14 .hover-14:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  z-index: 5;
+}
+
+.wrapper-14 .hover-14:before {
+  top: 0;
+  right: 0;
+}
+
+.wrapper-14 .hover-14:after {
+  bottom: 0;
+  right: 0;
+}
+
+.wrapper-14:hover:before,
+.wrapper-14:hover:after,
+.wrapper-14:hover .hover-14:before,
+.wrapper-14:hover .hover-14:after {
+  transform: scaleY(1);
+  transform: scaleX(1);
+}
+
+.link-cont {
+  position: relative;
+  font-size: 24px;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 15px 0;
+  color: #ff0000;
+}
+
+.link-wrapper {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+}
+
+.inner-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* CSS */
+/* Button Styling Taken From "https://getcssscan.com/css-buttons-examples" */
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0)
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 20px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+/*
+Small Adjustments (Keep?)
+*/
+.wrap-it{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.round{
+  border-radius: 12px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+.simple{
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+/*
+Super Small Section For Plans and Sidebar Component
+*/
+.horizontal {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.horizontal li {
+  list-style-image: none;
+  padding-left: 30px;
+  background-image: url('./ImagesCar/yin-yang-symbol.png');
+  background-size: 40px 40px; /* Adjust the size of the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: left center;
+  background-size: contain;
+}
+
+.customLink{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 100%;
+}
+
+/* Define the keyframes for the animation */
+@keyframes linkHover {
+  0% {
+    color: #B81D13;
+    text-decoration: none;
+  }
+  50% {
+    color: #EFB700;
+    text-decoration: underline;
+  }
+  100% {
+    color: #008450;
+    text-decoration: none;
+  }
+}
+
+/* Apply the animation to the link */
+.customLink a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.customLink a:hover {
+  animation: linkHover 1s infinite;
+}
