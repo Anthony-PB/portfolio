@@ -6,6 +6,7 @@ function Footer() {
   return (
     <div className="spread">
         <Carousel />
+        <p>Copyright &copy; 2024 Anthony Paredes-Bautista. All rights reserved.</p>
     </div>
   )
 }

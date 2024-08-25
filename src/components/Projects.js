@@ -21,7 +21,7 @@ const Projects = () => {
             if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
-        }, 100);
+        }, 200);
         }
     }, [location]);
     return( 
