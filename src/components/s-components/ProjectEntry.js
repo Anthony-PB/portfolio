@@ -31,6 +31,7 @@ function ProjectEntry(props) {
               </span>
             </div>
           )}
+          {props.git && (
           <div className="link-wrapper">
             <span className="inner-wrapper wrapper-14">
               <a className="link hover-14" href={props.git} target="_blank" rel="noopener noreferrer">
@@ -38,6 +39,7 @@ function ProjectEntry(props) {
               </a>
             </span>
           </div>
+        )}
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import playlist from "../images/playlist.png";
 import coc from "../images/coc.png"
 import a4 from "../images/a4Pic.png"
 import inv from "../images/invaders.png"
+import hack from "../images/hack.png"
 import ProjectEntry from './s-components/ProjectEntry';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -41,16 +42,22 @@ const Projects = () => {
             title="#2 | Playlist"lang="CSS, HTML, and JavaScript" image= {playlist}/>
         <ProjectEntry
             id="MCP"
-            desc="An application that evaluates postfix formulas in spreadsheets saved in CSV format."
+            desc="An application that evaluates postfix formulas in spreadsheets saved in CSV format. (No GitHub Due To School Policy)"
             //link = ""
-            git="https://github.com/Anthony-PB/a4-super"
+           // git="https://github.com/Anthony-PB/a4-super"
             title="#3 | Formula Evaluation"lang="Java" image= {a4}/>
         <ProjectEntry
             id=""
-            desc="A Space Invaders Clone"
+            desc="A Space Invaders Clone (No GitHub Due To School Policy)"
             //link = ""
-            git="https://github.com/Anthony-PB/ubiquitous-fiesta"
+            //git="https://github.com/Anthony-PB/ubiquitous-fiesta"
             title="#4 | Invaders"lang="Python" image= {inv}/>
+            <ProjectEntry
+            id=""
+            desc="Winner of Grand Prize at Cornell Digital Agriculture Hackathon 2024"
+            link = "https://prakriti-hack.netlify.app/"
+            git="https://github.com/NicholasChanng/bumi"
+            title="#5 | Website For The Hackathon"lang="CSS, HTML, and JavaScript(Utilizes React.js)" image= {hack}/>
     </div>
     )
 };
