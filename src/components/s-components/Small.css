@@ -254,13 +254,27 @@ Super Small Section For Plans and Sidebar Component
 
 .horizontal li {
   list-style-image: none;
-  padding-left: 30px;
+  padding-left: 40px; /* Adjust to give room for the image */
   background-image: url('./ImagesCar/yin-yang-symbol.png');
-  background-size: 40px 40px; /* Adjust the size of the image */
+  background-size: 40px 40px; /* Fixed size for the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: left center;
-  background-size: contain;
+  max-width: 300px; /* You can adjust this value based on your layout */
+  flex-shrink: 0; /* Prevent shrinking when resizing */
 }
+
+@media (max-width: 600px) {
+  .horizontal {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .horizontal li {
+    padding-left: 30px; /* Adjust padding for smaller screens */
+  }
+}
+
 
 .customLink{
   display: flex;
